@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { DkRoutes } from './dk/dk-routing.module';
+
 
 
 import { AppComponent } from './app.component';
-import { DkModule } from './dk/dk.module';
+import { NewModuleModule } from './new-module/new-module.module';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 
@@ -15,8 +15,8 @@ import { DkModule } from './dk/dk.module';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(DkRoutes),
-    DkModule
+    NewModuleModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

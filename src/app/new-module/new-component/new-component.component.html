@@ -1,0 +1,22 @@
+<p>
+  Directive and Query Param Examples
+  <br><h1>Query Param</h1>
+
+  ID received from route : {{id}}
+</p>
+<br><h1>Directive</h1>
+<p [appHighlightme]="color">Highlight me with Red Color 1 </p>
+
+<p appHighlightme [mycolor]="color">Highligh me with Red Color 2 </p>
+
+<input type="radio" name="color" (click)="color='red'">Red
+<input type="radio" name="color" (click)="color='green'">Green
+<input type="radio" name="color" (click)="color='yellow'">Yellow
+<br>
+Selected Color: {{color}}
+<br><h1>Pipes</h1>
+<p>The hero's birthday is {{ birthday | date:"MM/dd/yyyy" }} </p>
+<p> My own Pipe ... I am adding two values say 10 and 20 that is : {{10 | addboth: 20}}
+<br><h1>Output</h1>
+<app-new-child (hiFromChild) = "sayHi($event)"></app-new-child>
+

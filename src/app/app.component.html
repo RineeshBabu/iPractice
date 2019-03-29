@@ -1,17 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<router-outlet></router-outlet>
-<div class="body" *ngIf="router.url === '/'">
 <div style="text-align:center">
-    <h1>
-      Welcome to {{title}}
-    </h1>
-  </div>
-  <div class="main-links">
-  <h2>Here are some links to help you start: </h2>
-  <ul>
-    <li>
-      <h2><a href="/dk">Deborah Kurata</a></h2>
-    </li>
-  </ul>
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
 </div>
-</div>
+<nav>
+  <a routerLink="/new/5">Directive & QueryParam</a>
+</nav>
+<router-outlet></router-outlet>
+
+
